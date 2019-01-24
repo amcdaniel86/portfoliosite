@@ -27,6 +27,7 @@ p {
 }
 
 /* Utility Classes */
+/* NOT SPECIFIC TO ANY AREA, could be used anywhere on site, repeated containers, highlighted text, etc */
 .container {
   margin: auto;
   /* center with margin: auto, always with container classes, containing other parts */
@@ -36,7 +37,15 @@ p {
   padding: 0 20px;
 }
 
-/* Navbar */
+.text-primary {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+/* NAVBAR */
 #navbar {
   background: #333;
   color: #fff;
@@ -77,4 +86,28 @@ p {
   background:  #444;
   color: #f7c08a;
   /* will stay highlighted whatever current page user is on. */
+}
+
+/* Showcase */
+#showcase {
+  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  height: 600px;
+  /* inside stylesheet file IN the css folder. can't do ./, MUST do ../
+  double dot means going out of the current file. */
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
 }
