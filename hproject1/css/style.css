@@ -77,8 +77,12 @@ p {
 }
 
 .bg-primary {
-  background: #333;
-  color: #f7c08a;
+  background: #f7c08a;
+  color: #333;
+}
+
+.clr {
+  clear: both;
 }
 
 /* NAVBAR */
@@ -174,4 +178,28 @@ p {
 
 #home-info .info-content p {
   padding-bottom: 30px;
+}
+
+/* Features */
+
+.box {
+  float: left;
+  width:33.3%;
+  /* because there are 3 of them */
+  padding: 50px;
+  /* because we have border-box at top of css file, the padding above WILL NOT be added to the width, so we can have exact width. */
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+  /* padding isn't showing because the three boxes above footer have not been cleared yet. */
 }

@@ -7,7 +7,9 @@
   <meta name="description" content="Welcome to my portfolio page">
   <meta name="keywords" content="software engineering,web developer,front end developer">
   <!-- the above 2 meta tags, he added, keep in mind for future projects, they were not automatic, meta description, content, keywords and content -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- above fontawesome included - brings us certain classes that will provide certain icons now in our code. -->
+ <link rel="stylesheet" href="css/style.css">
   <title>Portfolio | Welcome</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
       <!-- id is good to use on parent elements of other elements -->
       <div class="container">
         <!-- this grouping contains the header text, and how to format it -->
-        <h1 class="logo"><a href="index.html">Welcome</a></h1>
+        <h1 class="logo"><a href="index.html">AM</a></h1>
         <ul>
           <li><a class="current" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -31,7 +33,7 @@
       <div class="container">
         <div class="showcase-content">
           <h1><span class="text-primary">Welcome</span> to my site!</h1>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga, optio animi soluta consequatur pariatur.</p>
+          <p class="lead">Through iterations and persistence we find accomplishment</p>
           <a class="btn" href="about.html">About Me</a>
         </div>
       </div>
@@ -42,12 +44,39 @@
     <div class="info-img"></div>
     <div class="info-content">
       <h2><span class="text-primary">My</span> Journey</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, modi earum nesciunt quisquam aliquam natus saepe! Aut, et neque voluptatem possimus nam maiores dignissimos odit reprehenderit id, culpa earum autem?
+      <p>After delving into political science years ago, I discovered a newfound interest in engineering. After returning to school, I pivoted towards computer science and software engineering and am steadfast in my commitment to become as adept as possible in my knowledge of computer programming.
       </p>
       <a href="about.html" class="btn btn-light">Read More</a>
       <!-- to write a tag with multiple classes, just type a.btn.btn-light, gets above code. -->
     </div>
-
   </section>
+
+  <section id="features">
+    <div class="box bg-light">
+        <i class="fas fa-hotel fa-3x"></i>
+        <!-- fontawesome, 2x-5x for size -->
+      <h3>Quora</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, beatae.</p>
+    </div>
+    <div class="box bg-primary">
+        <i class="fas fa-utensils fa-3x"></i>
+        <!-- fontawesome, 2x-5x for size -->
+      <h3>GitHub</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, odit.</p>
+    </div>
+    <div class="box bg-light">
+        <i class="fas fa-dumbbell fa-3x"></i>
+        <!-- fontawesome, 2x-5x for size -->
+      <h3>Medium</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, praesentium.</p>
+    </div>
+    <!-- SPEED TRICK - .box*3, asterisk number will make how many tag class/id you want, in this case, 3 div class="box" -->
+  </section>
+
+  <div class="clr"></div>
+
+  <footer id="main-footer">
+    <p>Alex McDaniel &copy; 2019 All Rights Reserved</p>
+  </footer>
 </body>
 </html>
