@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Welcome to my portfolio page">
+  <meta name="keywords" content="software engineering,web developer,front end developer">
+  <!-- the above 2 meta tags, he added, keep in mind for future projects, they were not automatic, meta description, content, keywords and content -->
+ <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio | About</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <!-- ensures background stays same color and size. -->
+      <!-- id is good to use on parent elements of other elements -->
+      <div class="container">
+        <!-- this grouping contains the header text, and how to format it -->
+        <h1 class="logo"><a href="index.html">AM</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header section only has navbar on about page -->
+  </header>
+
+  <section id="about-info" class="bg-light py-3">
+    <div class="container">
+      <div class="info-left">
+        <h1 class="l-heading"><span class="text-primary">My</span> Interests</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum hic aliquid facilis quidem eos iste obcaecati, repellat cupiditate dignissimos pariatur dolores alias error molestiae, saepe natus optio exercitationem tempora quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed ipsum laudantium perferendis saepe ea quis officia quo praesentium in.</p>
+      </div>
+      <div class="info-right">
+        <img src="./img/photo-2.jpg" alt="about-backdrop">
+      </div>
+    </div>
+  </section>
+
+<div class="clr"></div>
+
+<section id="testimonials" class="py-3">
+  <div class="container">
+    <h2 class="l-heading">Future Projects</h2>
+    <div class="testimonial bg-primary">
+      <img src="./img/person-1.jpg" alt="person1pic">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat eaque corporis quidem necessitatibus ducimus expedita, nobis veritatis? Asperiores earum sapiente nesciunt fuga dolorem, sed error repudiandae cupiditate quaerat ipsum dolores, cumque neque esse deserunt ipsa enim vero sunt quisquam.</p>
+    </div>
+
+    <div class="testimonial bg-primary">
+      <img src="./img/person-2.jpg" alt="person2dpic">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat eaque corporis quidem necessitatibus ducimus expedita, nobis veritatis? Asperiores earum sapiente nesciunt fuga dolorem, sed error repudiandae cupiditate quaerat ipsum dolores, cumque neque esse deserunt ipsa enim vero sunt quisquam.</p>
+    </div>
+  </div>
+</section>
+<!-- PATTERN HERE - sections stacked on top of each other, and then containers to move the content around in the middle. -->
+
+  <footer id="main-footer">
+    <p>Alex McDaniel &copy; 2019 All Rights Reserved</p>
+  </footer>
+</body>
+</html>

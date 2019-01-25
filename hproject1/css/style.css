@@ -18,6 +18,14 @@ a {
   text-decoration: none;
 }
 
+.link-light {
+  color: #fff;
+}
+
+.link-light:hover {
+  color: #f7c08a;
+}
+
 h1, h2, h3 {
   padding-bottom: 20px;
 }
@@ -84,6 +92,16 @@ p {
 .clr {
   clear: both;
 }
+
+.l-heading {
+  font-size: 40px;
+}
+
+/* Padding */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+  /* py refers to padding for y-axis, top and bottom. can use anywhere on page for specific padding amounts*/
 
 /* NAVBAR */
 #navbar {
@@ -195,6 +213,85 @@ p {
   margin-bottom: 10px;
 }
 
+/* About Info */
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  display: block;
+  margin: auto;
+  /* img by default is inline, so display: block, then margin: auto to center an inline element, this case an img. */
+  width: 70%;
+  border-radius: 50%;
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Testimonials */
+#testimonials {
+  height: 600px;
+  background: url('../img/test-bg.jpg') no-repeat center center/cover;
+  /* notice from style.css file, it requires ../ to get to img folder, from .html files, it is only ./ to get to img folder. */
+  padding-top:40px;
+}
+
+#testimonials .testimonial h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+#testimonials .testimonial img {
+  width: 100px;
+  /* necessary because large images will simply bust out of their container, must reduce size of image to prevent that. */
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+  /* pushes each field down */
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+  /* focus is pseudo selector that is what happens when an input/textarea is highlighted with a color or outline. */
+}
+
 /* Footer */
 #main-footer {
   text-align: center;
@@ -203,3 +300,4 @@ p {
   padding: 20px;
   /* padding isn't showing because the three boxes above footer have not been cleared yet. */
 }
+
