@@ -26,6 +26,14 @@ a {
   color: #f7c08a;
 }
 
+.link-dark {
+  color: #333;
+}
+
+.link-dark:hover {
+  color: #f7c08a;
+}
+
 h1, h2, h3 {
   padding-bottom: 20px;
 }
@@ -95,6 +103,18 @@ p {
 
 .l-heading {
   font-size: 40px;
+}
+
+.r-heading {
+  font-size:50px;
+}
+
+.adjust-pic {
+  padding-top:15px;
+}
+
+.adjust-link {
+  margin-top:40px;
 }
 
 /* Padding */
